@@ -1,8 +1,8 @@
 # odin-landing-page
 
 odin-landing-page is the final project in the CSS section of The Odin Project's Foundations course:
-    Foundations course: https://www.theodinproject.com/paths/foundations/courses/foundations
-    Landing page Project: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/landing-page
+Foundations course: https://www.theodinproject.com/paths/foundations/courses/foundations
+Landing page Project: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/landing-page
 
 Introduction
 
