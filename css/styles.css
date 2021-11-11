@@ -16,7 +16,7 @@ header {
 
 header ul {
     display: flex;
-    margin: 20px 200px;
+    padding: 0;
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -26,48 +26,118 @@ header ul {
     font-size: 24px;
     font-weight: 700;
     color: #f9faf8;
+    margin-left: 200px;
+}
+
+.nav-left li {
+    padding: 0;
 }
 
 .nav-right {
+    margin-right: 200px;
+}
+
+.nav-right li {
+    padding: 0;
+    margin-left: 30px;
+}
+
+header a {
+    text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
 }
 
-.nav-right li {
-    margin-left: 30px;
+header a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    margin: 0 200px;
+}
+
+.hero-img-placeholder {
+    background-color: #eee;
+    display: flex;
+    height: 180px;
+    margin: 5px;
+    width: 260px;
+    border: 2px solid #eee;
+}
+
+.hero-img-placeholder h4 {
+    align-self: center;
+    text-align:center;
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-    header ul {
-        margin: 15px 40px;
+    .nav-left {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    
+    .nav-right {
+        margin-right: 100px;
+    }
+    
+    .nav-right li {
+        margin-left: 20px;
     }
 
+    header a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-left {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    
+    .nav-right {
+        margin-right: 50px;
+    }
+    
     .nav-right li {
         margin-left: 15px;
     }
 
-}
+    header a {
+        font-size: 14px;
+    }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     header {
         flex-direction: column;
     }
     header ul {
         flex-direction: column;
-        margin: 5px;
     }
 
-    .nav-left li {
-        font-size: 20px;
+    header a {
+        /* font-size: 12px; */
+    }
+
+    .nav-left {
+        /* margin: auto; */
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 9px
     }
 
     .nav-right {
-        font-size: 14px;
+        /* margin-right: 0px;
+        margin-top: 7px; */
+        margin: 9px 0px;
+    }
+
+    .nav-left li {
+        /* font-size: 16px; */
     }
 
     .nav-right li {
-        margin-top: 6px;
-        margin-bottom: 6px;
         margin-left: 0px;
     }
 }
