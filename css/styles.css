@@ -291,8 +291,24 @@ header ul {
     }
 
     .gallery-content {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
+
+    .quote-main {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .quote-content {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .quote-author {
+        font-size: 20px;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 600px){
@@ -330,8 +346,6 @@ header ul {
         width: 95%;
         display: flex;
         flex-direction: column;
-        /* align-self: center;
-        text-align: center; */
     }
 
     .hero .text h1 {
