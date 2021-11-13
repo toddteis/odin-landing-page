@@ -176,6 +176,35 @@ header ul {
     font-size: 18px;
 }
 
+/* QUOTE SECTION */
+
+.quote {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+}
+
+.quote-main {
+    width: 48%;
+    margin-top: 120px;
+    margin-bottom: 90px;
+}
+
+.quote-content {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* @MEDIA'S */
+
 @media screen and (max-width: 1500px) {
     .page-width {
         width: 75%;
