@@ -249,6 +249,23 @@ header ul {
     font-weight: 700;
 }
 
+/* FOOTER */
+
+footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 10px;
+}
+
 /* @MEDIA'S */
 
 @media screen and (max-width: 1500px) {
