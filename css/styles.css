@@ -355,7 +355,26 @@ header ul {
         text-align: center;
     }
 
+    .call-to-action {
+        height: 240px;
+    }
+    
+    .cta-main {
+        flex-direction: column;
+        height: 150px;
+    }
+    
+    .cta-content h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .cta-content p {
+        font-size: 16px;
+        text-align: center;
+    }
 }
+
 
 @media screen and (max-width: 600px){
     .page-width {
