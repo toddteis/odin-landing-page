@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 140px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin:0;
@@ -54,6 +58,17 @@ header {
     padding: 5px;
 }
 
+.nav-left a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #e5e7eb;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+
 .nav-right li {
     padding: 5px;
 
@@ -92,6 +107,7 @@ header {
     width: 50%;
     padding-right: 50px;
     margin: auto;
+
 }
 
 .hero .text h1 {
@@ -301,6 +317,10 @@ footer p {
 }
 
 @media screen and (max-width: 800px) {
+    html {
+        scroll-padding-top: 20px;
+    }
+    
     header {
         position: relative;
     }
