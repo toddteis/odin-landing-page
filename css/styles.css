@@ -125,21 +125,22 @@ header {
     padding: 5px;
 }
 
-.hero-img-placeholder {
-    background-color: #858585;
-    color: #e5e7eb;
-    display: flex;
+.hero-img-container {
     padding: 5px;
-    height: 300px;
     width: 50%;
-    border: 2px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
 }
 
-.hero-img-placeholder p {
-    font-size: 18px;
-    align-self: center;
-    text-align:center;
+.hero-img-container img {
     width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #3882f6;
+    border-radius: 4px;
 }
 
 .btn-cta {
@@ -178,7 +179,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* margin-bottom: 100px; */
 }
 
 .card {
@@ -376,7 +376,7 @@ footer p {
         margin-bottom: 25px;
     }
 
-    .hero-img-placeholder {
+    .hero-img-container {
         align-self: center;
     }
 
@@ -485,7 +485,7 @@ footer p {
         align-self: center;
     }
 
-    .hero-img-placeholder {
+    .hero-img-container {
         display: none;
     }
 }
