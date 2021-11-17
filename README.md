@@ -1,6 +1,6 @@
 # odin-landing-page
 
-# Pictures from unsplash.com
+Images from unsplash.com
 
 odin-landing-page is the final project in the CSS section of The Odin Project's Foundations course:
 Foundations course: https://www.theodinproject.com/paths/foundations/courses/foundations
