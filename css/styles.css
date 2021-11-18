@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-lightest:#f9faf8;
+    --font-light:#e5e7eb;
+    --font-medium: #858585;
+
+    --lightest:#f9faf8;
+    --light:#858585;
+    --medium:#3882f6;
+    --dark:#0665ff;
+    --darkest:#1f2937;
+}
+
 html {
     scroll-padding-top: 140px;
 }
@@ -18,7 +30,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100px;
-    background-color: #1f2937;
+    background-color: var(--darkest);
 }
 
 .nav-main {
@@ -47,7 +59,6 @@ header {
 .nav-left {
     font-size: 24px;
     font-weight: 700;
-    color: #f9faf8;
 }
 
 .nav-right ul {
@@ -61,7 +72,7 @@ header {
 .nav-left a {
     text-decoration: none;
     font-size: 24px;
-    color: #e5e7eb;
+    color: var(--font-lightest);
 }
 
 .nav-left a:hover {
@@ -81,7 +92,7 @@ header {
 .nav-right a {
     text-decoration: none;
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--font-light);
 }
 
 .nav-right a:hover {
@@ -92,7 +103,7 @@ header {
 
 .hero-container {
     padding-top: 100px;
-    background-color: #1f2937;
+    background-color: var(--darkest);
     display: flex;
     justify-content: center;
 }
@@ -113,7 +124,7 @@ header {
 .hero .text h1 {
     font-size: 48px;
     font-weight: 900;
-    color:#f9faf8;
+    color: var(--font-lightest);
     margin-top: 0px;
     margin-bottom: 20px;
     padding: 5px;
@@ -121,7 +132,7 @@ header {
 
 .hero .text p {
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--font-light);
     padding: 5px;
 }
 
@@ -139,13 +150,13 @@ header {
     height: 260px;
     object-fit: cover;
     object-position: center;
-    border: 4px solid #3882f6;
+    border: 4px solid var(--medium);
     border-radius: 4px;
 }
 
 .btn-cta {
-    background-color: #3882f6;
-    color: #f9faf8;
+    background-color: var(--medium);
+    color: var(--font-lightest);
     border: none;
     border-radius: 7px;
     height: 36px;
@@ -156,7 +167,7 @@ header {
 }
 
 .btn-cta:hover {
-    background-color: #0665ff;
+    background-color: var(--dark);
 }
 
 /* SERVICES SECTION */
@@ -164,7 +175,8 @@ header {
 .services {
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    padding: 100px 0;
+    background-color: var(--font-lightest);
 }
 
 .services h1 {
@@ -204,14 +216,14 @@ header {
     height: 170px;
     object-fit: cover;
     object-position: center;
-    border: 4px solid black;
+    border: 4px solid var(--medium);
     border-radius: 15px;
 }
 
 .card-description {
     width: 170px;
     padding: 10px 0px;
-    color: #858585;
+    color: var(--font-medium);
     text-align: center;
     font-size: 18px;
 }
@@ -221,7 +233,7 @@ header {
 .quote {
     display: flex;
     justify-content: center;
-    background-color: #e5e7eb;
+    background-color: var(--font-light);
 }
 
 .quote-main {
@@ -255,11 +267,11 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #3882f6;
+    border: 1px solid var(--medium);
     border-radius: 10px;
     height: 150px;
-    background-color: #3882f6;
-    color: #e5e7eb;
+    background-color: var(--medium);
+    color: var(--font-light);
 }
 
 .cta-content h1 {
@@ -279,10 +291,10 @@ header {
 }
 
 .cta-form button {
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--font-light);
     border-radius: 7px;
-    background-color: #3882f6;
-    color: #e5e7eb;
+    background-color: var(--medium);
+    color: var(--font-light);
     height: 36px;
     width: 130px;
     font-size: 18px;
@@ -291,14 +303,15 @@ header {
 }
 
 .cta-form button:hover {
-    background-color: #0665ff;
+    background-color: var(--dark);
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #1f2937;
-    color: #f9faf8;
+    background-color: var(--darkest);
+    /* color: #f9faf8; */
+    color: var(--font-lightest);
     text-align: center;
     height: 100px;
     display: flex;
@@ -392,9 +405,6 @@ footer p {
     }
 
     .btn-cta {
-        background-color: #3882f6;
-        color: #f9faf8;
-        border: none;
         border-radius: 7px;
         height: 34px;
         width: 110px;
@@ -402,7 +412,7 @@ footer p {
     }
 
     .services {
-        margin: 20px 0;
+        padding: 20px 0;
     }
 
     .services .title h1 {
