@@ -57,8 +57,9 @@ header {
 }
 
 .nav-left {
+    font-family: 'Architects Daughter', cursive;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .nav-right ul {
